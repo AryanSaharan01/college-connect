@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SignIn</title>
+
+<link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form class="form" action="/dashboard" method="post">
+            <h1 class="text-center mb-4">Sign Up</h1>
+
+            <div class="form-group">
+                <input type="text" id="rollno" name="rollno" class="form-control" required placeholder="Roll No.">
+            </div>
+
+            <div class="form-group">
+                <input type="password" id="pswd" name="pswd" class="form-control" required placeholder="Password">
+                <!-- Add an eye icon for the password toggle -->
+                <span class="password-toggle" onclick="togglePassword('pswd')">
+                    👁️
+                </span>
+
+            </div>
+
+            <button class="btn btn-primary btn-block" type="submit">Sign In</button>
+
+        </form>
+    </div>
+
+
+    <script>
+        // JavaScript function to toggle password visibility
+        function togglePassword(inputId) {
+            const passwordInput = document.getElementById(inputId);
+            passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';
+        }
+    </script>
+
+</body>
+
+</html>

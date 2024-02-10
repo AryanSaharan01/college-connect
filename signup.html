@@ -4,107 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> SignIn/SignUP</title>
+    <title> SignUp</title>
 
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100vh;
-            background: linear-gradient(to right, #1a1a1a, #333333);
-            color: #ffffff;
-
-            /* box-shadow: inset 0px 0px 15px 6px rgb(43 190 238);  */
-
-        }
-
-
-        .container {
-            background-color: #ffffff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            overflow: hidden;
-            width: 300px;
-            margin: auto;
-            /* Adjusted margin to make space for the fixed navbar */
-            box-shadow: 0 0 20px 8px rgb(43 190 238);
-            /* Light blue shadow */
-        }
-
-        .form {
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 24px;
-            color: #333333;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .drop-down {
-            width: 100%;
-            height: 5.2vh;
-            border-radius: 14px;
-            padding: 1px 10px;
-            border-color: #dddddd;
-        }
-
-        label {
-            font-size: 14px;
-            color: #555555;
-            margin: 0px 140px 8px 8px;
-        }
-
-        input {
-            width: 100%;
-            padding: 10px;
-            box-sizing: border-box;
-            border: 1px solid #dddddd;
-            border-radius: 14px;
-            font-size: 14px;
-        }
-
-        .form-check {
-            display: flex;
-            align-items: start;
-        }
-
-        .btn {
-            width: 100%;
-            padding: 10px;
-            background-color: #0bc0c7;
-            /* color: #ffffff; */
-            color: black;
-            border: none;
-            border-radius: 14px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        .btn:hover {
-            color: #ffffff;
-        }
-
-        .text-muted {
-            font-size: 12px;
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        .password-toggle {
-            cursor: pointer;
-
-        }
-    </style>
+<link rel="stylesheet" href="signup.css">
 </head>
 
 <body>
@@ -120,10 +22,6 @@
         <form class="form" action="/dashboard" method="post">
             <h1 class="text-center mb-4">Sign Up</h1>
 
-
-
-
-
             <!-- <div class="form-group">
                 <input type="text" id="email" name="email" class="form-control" required
                 placeholder="Email/Phone no">
@@ -135,6 +33,11 @@
 
             <div class="form-group">
                 <input type="text" id="rollno" name="rollno" class="form-control" required placeholder="Roll No.">
+            </div>
+
+            <div class="form-group">
+                <input type="email" id="email" name="email" class="form-control" required
+                placeholder="Clg official mail">
             </div>
 
             <div class="form-group">
@@ -187,9 +90,7 @@
 
             </div>
 
-
-
-            <button class="btn btn-primary btn-block" type="submit">Sign In</button>
+            <button class="btn btn-primary btn-block" type="submit">Sign Up</button>
 
         </form>
     </div>

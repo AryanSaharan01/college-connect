@@ -3,40 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Flex Container</title>
+    <title>Grid Width Based on Element</title>
     <style>
-        body{
-            background-color: black;
-            color: white;
-        }
-        .menu-box{
-            border: 2px solid yellow;
-            border-radius: 12px;
-            display: flex;
-            padding: 4px 2vw;
-            /* background-color: aqua; */
-
-
-            align-items: center;
+        .container {
+            max-width: 800px; /* Set a maximum width for the container */
+            margin: 0 auto; /* Center the container horizontally */
+            padding: 20px;
+            box-sizing: border-box;
         }
 
-        .menu-box img{
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            /* margin-right: 10px; */
-            /* background-color: #fff; */
-            margin-right: 5vw;
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(200px, 1fr)); /* Responsive grid columns */
+            gap: 20px;
         }
 
-
+        .grid-item {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
 
-    <div class="menu-box">
-        <img src="Static/images/chat-icon.png" alt="">
-        <h3>About me</h3>
+    <div class="container">
+        <h2>Grid Width Based on Element</h2>
+
+        <div class="grid">
+            <!-- Sample grid items -->
+            <div class="grid-item">Item 1</div>
+            <div class="grid-item">Item 2</div>
+            <div class="grid-item">Item 3</div>
+            <div class="grid-item">Item 4</div>
+            <!-- Add more grid items as needed -->
+        </div>
     </div>
 
 </body>

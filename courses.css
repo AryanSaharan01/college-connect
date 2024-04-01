@@ -142,8 +142,10 @@ body {
   transform: scaleX(1);
 }
 /* --------------------------------------------------------- */
+
 .menu-box {
   border: 2px solid var(--shadow1);
+
   border-radius: 12px;
   display: flex;
   padding: 4px 1vw;
@@ -157,6 +159,8 @@ body {
   /* -webkit-transition-duration: 0.3s;
     -webkit-box-shadow: 0px 0px 0 0 var(--shadow-hover) inset, 0px 0px 0 0 var(--shadow-hover) inset; */
 }
+
+
 
 .menu-box:hover {
   transform: scale(1.1);
@@ -205,6 +209,7 @@ body {
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   margin-bottom: 8vh;
+
 }
 
 .heading h1 {

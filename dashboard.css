@@ -292,5 +292,64 @@ border-bottom-right-radius: 30px; */
   padding-top: 1vh;
 }
 /* ----------------------------------------------------------- */
+@media screen and (max-width: 375px) {
+  body {
+    grid-template-columns: 1fr; /* For smaller screens, switch to a single column layout */
+  }
 
+  .sidebar {
+    display: none; /* Hide sidebar on smaller screens */
+  }
+
+  .side-menu-box h1 {
+    font-size: 28px; /* Adjusted font size for even smaller screens */
+  }
+
+  .menu-box img {
+    width: 25px; /* Adjusted image size for even smaller screens */
+    height: 25px;
+    margin-right: 1vw; /* Adjusted margin for even smaller screens */
+  }
+
+  .profile-pic {
+    width: 100%; /* Adjusted width for smaller screens */
+    height: auto;
+  }
+
+  .all-info {
+    grid-template-columns: 1fr; /* For smaller screens, switch to a single column layout */
+    padding: 5vh 2vw; /* Adjusted padding for smaller screens */
+  }
+
+  .all-info-item {
+    padding: 14px 5vw; /* Adjusted padding for smaller screens */
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .sidebar {
+    display: none; /* Hide the sidebar on screens less than 500px */
+  }
+
+  body {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+  }
+
+  .prof-flex-cont {
+    margin-top: 15vh;
+    flex-direction: column; /* Change flex direction to column for screens less than 1000px */
+    align-items: center; /* Center items in column layout */
+  }
+
+  .all-info{
+    margin: 5vh 2vw;
+    padding: 5vh 3vw;
+  }
+
+  .all-info-item{
+    padding: 14px;
+  }
+}
 /* ----------------------------------------------------------- */

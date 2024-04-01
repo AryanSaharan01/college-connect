@@ -1,45 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Width Based on Element</title>
-    <style>
-        .container {
-            max-width: 800px; /* Set a maximum width for the container */
-            margin: 0 auto; /* Center the container horizontally */
-            padding: 20px;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Sample Box</title>
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(200px, 1fr)); /* Responsive grid columns */
-            gap: 20px;
-        }
+  <style>
+    body {
+  background-color: #333; /* Dark grey body background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 
-        .grid-item {
-            background-color: #3498db;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
+.translucent-box {
+  background-color: rgba(255, 255, 255, 0.7); /* Translucent white background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
+  max-width: 400px; /* Set maximum width if needed */
+  text-align: center;
+}
+
+  </style>
 </head>
 <body>
-
-    <div class="container">
-        <h2>Grid Width Based on Element</h2>
-
-        <div class="grid">
-            <!-- Sample grid items -->
-            <div class="grid-item">Item 1</div>
-            <div class="grid-item">Item 2</div>
-            <div class="grid-item">Item 3</div>
-            <div class="grid-item">Item 4</div>
-            <!-- Add more grid items as needed -->
-        </div>
-    </div>
-
+  <div class="translucent-box">
+    <p>This is a sample box with a translucent background!</p>
+  </div>
 </body>
 </html>

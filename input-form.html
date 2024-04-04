@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Detail Form</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 30px 0px;
+        }
+
+        form {
+            border: 2px solid red;
+            width: 50%;
+            margin: auto;
+            padding: 30px 15px;
+            display: flex;
+            flex-direction: column;
+
+            box-shadow: 0px 0px 13px 3px #f2d037;
+            border-radius: 17px;
+        }
+
+        label{
+            font-size: 18px;
+        }
+
+        .sub-form{
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>About me Details Update</h1>
+
+    <form>
+        <div class="sub-form">
+            <label for="Description">Describe Yourself</label>
+            <textarea name="Description" id="Description"></textarea>
+        </div>
+        
+        <div class="sub-form">
+            <label for="DOB">Date of Birth</label>
+            <input type="date" id="DOB">
+        </div>
+
+        <div class="sub-form">
+            <label for="Contact-no">Mobile No.</label>
+            <input type="number" id="Contact-no">
+        </div>
+
+        <div class="sub-form">
+            <label for="Address">Address</label>
+            <textarea name="Address" id="Address"></textarea>
+        </div>
+
+
+        <div class="sub-form">
+            <label for="Pname">Guardian Name</label>
+            <input type="text" id="Pname">
+        </div>
+    </form>
+
+</body>
+
+</html>
